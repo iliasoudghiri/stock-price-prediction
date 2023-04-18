@@ -5,7 +5,7 @@ This project aims to develop a model for predicting future stock prices based on
 ### Project Outline
 
 1. Data Collection
-We will gather historical stock data from a reliable source like Yahoo Finance or Alpha Vantage. The data should include daily open, close, high, low prices, and volume for a chosen stock or set of stocks. We will collect at least five years of historical data for our analysis.
+We will gather historical stock data from Yahoo Finance. The data should include daily open, close, high, low prices, and volume for a chosen stock or set of stocks. We will collect at least five years of historical data for our analysis.
 
 2. Data Cleaning and Preprocessing
 Handle missing values or outliers, if any.
@@ -33,40 +33,3 @@ Choose the model that performs the best on the test set as our final model for p
 5. Deployment
 Once we have selected the best-performing model, we will deploy it as a web application or API, depending on the desired use case. This will enable users to input a stock symbol and a date range, and receive predicted stock prices for that period.
 
-
-## repo structure
-stock-price-prediction/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── models/
-│
-├── notebooks/
-│
-├── src/
-│   ├── data/
-│   │   ├── __init__.py
-│   │   └── data_preparation.py
-│   ├── features/
-│   │   ├── __init__.py
-│   │   └── feature_engineering.py
-│   ├── models/
-│   │   ├── __init__.py
-│   │   ├── arima_model.py
-│   │   ├── lstm_model.py
-│   │   └── prophet_model.py
-│   ├── evaluation/
-│   │   ├── __init__.py
-│   │   └── model_evaluation.py
-│   └── visualization/
-│       ├── __init__.py
-│       └── visualize_results.py
-│
-├── tests/
-│
-├── .gitignore
-├── README.md
-├── requirements.txt
-└── setup.py
